@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 align="center">Calculator</h1>
+
+    <div class="tempat" >
+        <span class="judul-input">Angka 1 : </span>
+        <input id="num1" class="detail-input" type="number" placeholder="Masukkan Angka Pertama.." >
+        <br>
+        <span class="judul-input">Angka 2 : </span>
+        <input id="num2"  class="detail-input" type="number" placeholder="Masukkan Angka kedua.."  >
+        <br>
+        <span class="judul-input">Hasil</span><span class="titik2">:</span>
+        <input id="hasil" class="detail-input" type="number" placeholder="Hasil Perhitungan.." readonly>
+        <br>
+        <button id="tambah" class="operasi">+</button>
+        <button id="kurang" class="operasi">-</button>
+        <button id="kali" class="operasi">*</button>
+        <button id="bagi" class="operasi">/</button>
+    </div>
+
+    <script type="text/javascript">
+        var n1 = document.getElementById("num1");
+        var n2 = document.getElementById("num2");
+        var hasil = document.getElementById("hasil");
+
+            document.getElementById("tambah").addEventListener
+            ("click", function() {
+                hasil.value = parseFloat(n1.value)+parseFloat(n2.value);
+            });
+
+
+            document.getElementById("kurang").addEventListener
+            ("click", function() {
+                hasil.value = parseFloat(n1.value)-parseFloat(n2.value);
+            });
+
+            document.getElementById("kali").addEventListener
+            ("click", function() {
+                hasil.value = parseFloat(n1.value)*parseFloat(n2.value);
+            });
+
+            document.getElementById("bagi").addEventListener
+            ("click", function() {
+                hasil.value = parseFloat(n1.value)/parseFloat(n2.value);
+            });
+
+
+    </script>
+</body>
+</html>

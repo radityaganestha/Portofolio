@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    text-align: center;
+}
+.tempat {
+    
+    outline: 2px solid white; 
+    padding-top: 50px;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    background-color: yellow;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.titik2 { 
+    margin-left: 28px;
+    margin-right: 4px;
+    font-size: 20px;
+    font-weight: 530;
+}
+
+.operasi {
+    margin-top: 12px;
+    margin: 8px;
+    width: 70px;
+    height: 30px;
+    background-color: aqua;
+    outline: 2px solid white; 
+    border: none;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Bayangan pada bagian kanan dan bawah */
+}
+
+.detail-input {
+    margin: 5px;
+    width: 300px;
+    height: 40px;
+   
+}
+
+.judul-input {
+  
+    font-size: 20px;
+    font-weight: 530;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Siswa</title>
+
+     <style>
+        body {
+            background-image: url(langit.jpg);
+            
+        }
+
+        
+        .detail-user {
+        text-align: left;
+        margin-bottom: 20px;
+        }
+
+        label {
+        display: block;
+        margin-bottom: 5px;
+       }
+        .title {
+            text-align: center;
+        }
+        .title h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+
+        }
+
+        .gambar {
+            text-align: center;
+        }
+
+        .detail-gambar {
+            width: 500px;
+            margin-bottom: 30px;
+        }
+
+        .detail-input {
+        width: 100%;
+        height: 30px;
+        border: 2px solid #000;
+        border-radius: 4px;
+        box-sizing: border-box;
+        transition: border-color 0.3s, box-shadow 0.3s;
+       }
+
+       input[type="text"]:focus {
+        border-color: #4a90e2;
+        box-shadow: 0 0 10px rgba(74, 144, 226, 0.5);
+        outline: none;
+       }
+
+        form {
+            background-color: #ffffff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0, 0.5);
+        }
+
+        input[type=radio] {
+            margin-left: 18px;
+            margin-right: 8px;
+        
+        }
+
+        .detail-user span {
+            color: red;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #007BFF;
+            border: none;
+            width: 500px;
+            height: 50px;
+            color: white;
+            padding: 12px 24px;
+            text-align: center;
+            display: inline-block;
+            font-size: 18px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        
+        .animasi-teks {
+    font-size: 3em;
+    color: #3498db;
+    text-align: center;
+    /* Tambahkan animasi */
+    animation: getar 1s infinite, ubah-warna 2s infinite;
+}
+
+@keyframes getar {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes ubah-warna {
+    0% {
+        color: #3498db;
+    }
+    50% {
+        color: #e74c3c;
+    }
+    100% {
+        color: #3498db;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="title" >
+        <h1 class="animasi-teks">Form Pendaftaran Siswa Online</h1>
+    </div>  
+    
+    <form id="form">
+        <div class="gambar">
+            <img src="ppdb.jpeg" alt="Gambar ppdb" class="detail-gambar">
+        </div>
+
+        <div class="detail-user">
+            <label for="nama" id="label-nama">
+                1. Nama <span>*</span> 
+            </label>
+            <input class="detail-input" type="text" id="nama" placeholder="Masukkan Nama Lengkap.." required>
+        </div>
+    
+        <div class="detail-user">
+           <label for="nama">2. Jenis Kelamin <span>*</span></label>
+    
+           <input type="radio" name="gender" value="Laki-Laki">Laki-Laki
+         
+           <input type="radio" name="gender" value="Perempuan">Perempuan
+        </div>
+    
+        <div class="detail-user">
+            <label for="email" id="label-email">
+                3. Email <span>*</span>
+            </label>
+            <input class="detail-input" type="text" id="email" placeholder="Masukkan Alamat Email Anda.." required>
+        </div>
+    
+    
+        <div class="detail-user">
+            <label for="telepon" id="label-telepon">
+                4. Nomor Telepon <span>*</span>
+            </label>
+            <input class="detail-input" type="text" id="telepon" placeholder="Masukkan Nomor Telepon Anda.." required>
+        </div>
+    
+        <div class="detail-user">
+            <label for="kota" id="label-kota">
+                5. Kota Domisili <span>*</span>
+            </label>
+            <input class="detail-input" type="text" id="kota" placeholder="Masukkan Nama Kota.." required>
+        </div>  
+    
+        <div class="detail-user">
+            <label for="asalsekolah" id="label-asalsekolah">
+                5. Asal Sekolah (SMP) <span>*</span>
+            </label>
+            <input class="detail-input" type="text" id="asalsekolah" placeholder="Masukkan Nama Sekoah.." required>
+        </div>
+    
+        <div class="detail-user">
+            <label for="jurusan" id="label-jurusan">
+                6. Jurusan Pilihan <span>*</span>
+            </label>
+            <select name="jurusan" id="jurusan">
+                <option value="Teknik_Komputer_Jaringan">Teknik Komputer Jaringan</option>
+                <option value="Rekayasa_Perangkat_Lunak">Rekayasa Perangkat Lunak</option>
+                <option value="Animasi">Animasi</option>
+                <option value="Desain_Komunikasi_Visual">Desain Komunikasi Visual</option>
+                <option value="Teknik_Grafika">Teknik Grafika</option>
+            </select>
+        </div> 
+       
+        <button type="submit" value="Daftar">
+            Daftar 
+        </button>
+    </form>
+
+</body>
+</html>
